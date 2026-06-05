@@ -3,25 +3,135 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Writings of Dhas Poster</title>
+<title>Writings of Dhas — original poetry, in motion</title>
+<meta name="description" content="Writings of Dhas turns original, handwritten poetry into short videos and publishes them to the creator's own social accounts, including TikTok and YouTube.">
 <style>
-  body { font-family: -apple-system, Segoe UI, Roboto, sans-serif; max-width: 720px;
-         margin: 60px auto; padding: 0 20px; line-height: 1.7; color: #1a1a1a; }
-  h1 { font-size: 2rem; } a { color: #0a58ca; }
-  .links { margin-top: 2rem; } .links a { display: inline-block; margin-right: 1.5rem; }
-  footer { margin-top: 3rem; font-size: 0.9rem; color: #666; }
+  :root{
+    --bg:#0e0d12; --panel:#16151c; --ink:#f3efe9; --muted:#a59f97;
+    --line:rgba(255,255,255,.10); --accent:#c7a26b; --accent-soft:rgba(199,162,107,.14);
+  }
+  *{box-sizing:border-box} html{scroll-behavior:smooth}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font-family:-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.65;-webkit-font-smoothing:antialiased}
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:1020px;margin:0 auto;padding:0 22px}
+  .serif{font-family:Georgia,"Times New Roman",serif}
+  header.nav{position:sticky;top:0;z-index:10;background:rgba(14,13,18,.82);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+  .nav-in{display:flex;align-items:center;gap:18px;height:64px}
+  .brand{display:flex;align-items:center;gap:10px;font-weight:700;letter-spacing:.2px}
+  .brand .mark{width:34px;height:34px;border-radius:8px;background:#000;border:1px solid var(--line);
+    display:flex;align-items:center;justify-content:center;color:var(--ink);font-family:Georgia,serif;font-size:13px}
+  .nav-links{margin-left:auto;display:flex;gap:22px;font-size:14px;color:var(--muted)}
+  .nav-links a:hover{color:var(--ink)}
+  .hero{padding:88px 0 64px;border-bottom:1px solid var(--line)}
+  .eyebrow{font-size:12px;letter-spacing:2px;text-transform:uppercase;color:var(--accent);margin-bottom:18px}
+  h1{font-size:clamp(34px,6vw,60px);line-height:1.04;letter-spacing:-1px;margin:0 0 18px}
+  h1 em{font-style:italic;color:var(--accent)}
+  .lede{font-size:19px;color:var(--muted);max-width:620px;margin:0 0 28px}
+  .cta{display:inline-flex;align-items:center;gap:8px;background:var(--accent);color:#1a1408;font-weight:700;
+    padding:13px 22px;border-radius:10px;font-size:15px}
+  .cta.ghost{background:transparent;color:var(--ink);border:1px solid var(--line);margin-left:10px}
+  section{padding:64px 0;border-bottom:1px solid var(--line)}
+  .kicker{font-size:12px;letter-spacing:2px;text-transform:uppercase;color:var(--accent);margin-bottom:12px}
+  h2{font-size:clamp(24px,4vw,34px);letter-spacing:-.5px;margin:0 0 14px}
+  .grid{display:grid;gap:18px}
+  @media(min-width:760px){.grid.cols-3{grid-template-columns:repeat(3,1fr)}.grid.cols-2{grid-template-columns:1fr 1fr}}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:24px}
+  .card .n{font-family:Georgia,serif;font-size:15px;color:var(--accent);margin-bottom:10px}
+  .card h3{margin:0 0 8px;font-size:18px}
+  .card p{margin:0;color:var(--muted);font-size:14.5px}
+  .quote{font-family:Georgia,serif;font-style:italic;font-size:clamp(22px,3.4vw,30px);line-height:1.4;color:var(--ink);max-width:760px}
+  .quote span{color:var(--accent)}
+  .note{background:var(--accent-soft);border:1px solid rgba(199,162,107,.3);border-radius:16px;padding:22px 24px}
+  .note p{margin:.4rem 0;color:var(--ink);font-size:14.5px}
+  .note code{background:rgba(255,255,255,.08);padding:1px 6px;border-radius:5px;font-size:13px}
+  footer{padding:48px 0 64px;color:var(--muted);font-size:14px}
+  .foot-in{display:flex;flex-wrap:wrap;gap:18px;align-items:center;justify-content:space-between}
+  .foot-links{display:flex;gap:22px}
+  .foot-links a:hover{color:var(--ink)}
 </style>
 </head>
 <body>
-<h1>Writings of Dhas Poster</h1>
-<p>A personal tool used by its owner to turn their own original written poetry into
-short videos and publish them to their own social media accounts, including TikTok.</p>
-<p>It posts only the owner's own original content to the owner's own accounts. It does
-not collect, access, or post any other person's data.</p>
-<div class="links">
-  <a href="./privacy.html">Privacy Policy</a>
-  <a href="./terms.html">Terms of Service</a>
-</div>
-<footer>Contact: <a href="mailto:whitelabelautodetailing@gmail.com">whitelabelautodetailing@gmail.com</a></footer>
+
+<header class="nav">
+  <div class="wrap nav-in">
+    <a class="brand" href="/writingsofdhas-legal/">
+      <span class="mark">d</span> Writings of Dhas
+    </a>
+    <nav class="nav-links">
+      <a href="#how">How it works</a>
+      <a href="#about">About</a>
+      <a href="#tiktok">TikTok</a>
+      <a href="./privacy.html">Privacy</a>
+      <a href="./terms.html">Terms</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="wrap">
+      <div class="eyebrow">Original poetry, in motion</div>
+      <h1 class="serif">Quiet poems,<br><em>made to be seen.</em></h1>
+      <p class="lede">Writings of Dhas is a personal creative studio that turns original, handwritten
+      poetry into short, typographic videos — and shares them on the creator's own social channels.</p>
+      <a class="cta" href="#how">See how it works</a>
+      <a class="cta ghost" href="https://www.tiktok.com/@writingsofdhas" target="_blank" rel="noopener">@writingsofdhas ↗</a>
+    </div>
+  </section>
+
+  <section id="how">
+    <div class="wrap">
+      <div class="kicker">How it works</div>
+      <h2 class="serif">From the page to the feed, in three steps.</h2>
+      <div class="grid cols-3" style="margin-top:28px">
+        <div class="card"><div class="n">01</div><h3>Write</h3><p>Every piece starts as the creator's own original poem — written by hand, then transcribed.</p></div>
+        <div class="card"><div class="n">02</div><h3>Compose</h3><p>The poem is set in motion as a clean, typewriter-style short video with the signature look.</p></div>
+        <div class="card"><div class="n">03</div><h3>Publish</h3><p>The finished short is posted to the creator's own accounts — TikTok and YouTube — through the official APIs.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="wrap">
+      <div class="kicker">About</div>
+      <p class="quote">“I write small poems and wanted an honest way to share them — <span>so I built a tool that does exactly that, and nothing more.</span>”</p>
+      <div class="grid cols-2" style="margin-top:30px">
+        <div class="card"><h3>A personal studio</h3><p>Writings of Dhas isn't a marketplace or a network. It's a single creator's tool for publishing their own work — used only by its owner, for their own accounts.</p></div>
+        <div class="card"><h3>Original work only</h3><p>Everything published is the creator's own original poetry. The tool does not collect, access, scrape, or post anyone else's content or data.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="tiktok">
+    <div class="wrap">
+      <div class="kicker">TikTok integration</div>
+      <h2 class="serif">Built on TikTok's official Content Posting API.</h2>
+      <div class="note" style="margin-top:22px">
+        <p><strong>What the app does:</strong> it lets the owner authenticate with their own TikTok account and publish their own poem videos to that account.</p>
+        <p><strong>What it accesses:</strong> only the permission needed to upload and post videos to the connected account (<code>video.upload</code> / <code>video.publish</code>).</p>
+        <p><strong>What it never does:</strong> it does not read, store, or post other users' content, followers, or personal data, and it is not offered to third parties.</p>
+        <p>Full details are in our <a href="./privacy.html" style="color:var(--accent)">Privacy Policy</a> and <a href="./terms.html" style="color:var(--accent)">Terms of Service</a>.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap foot-in">
+    <div>
+      <div class="brand"><span class="mark">d</span> Writings of Dhas</div>
+      <div style="margin-top:8px">Original poetry, published by its creator.</div>
+    </div>
+    <div class="foot-links">
+      <a href="#how">How it works</a>
+      <a href="./privacy.html">Privacy</a>
+      <a href="./terms.html">Terms</a>
+      <a href="mailto:whitelabelautodetailing@gmail.com">Contact</a>
+    </div>
+  </div>
+  <div class="wrap" style="margin-top:22px;font-size:12.5px;color:#6f6a63">© 2026 Writings of Dhas · whitelabelautodetailing@gmail.com</div>
+</footer>
+
 </body>
 </html>
